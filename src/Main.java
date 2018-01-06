@@ -5,9 +5,10 @@ public class Main {
     public static void main(String[] args) {
 
         LinkedList<String> list=new LinkedList<>();
-        Scanner scanner=new Scanner("! ( A * C ) + B * C #");
-        //System.out.println("输入字符串");
-        //Scanner scanner = new Scanner(System.in)
+        //Scanner scanner=new Scanner("! ( A * C ) + B * C #");
+        System.out.println("输入字符串，以空格分开每个字符，并以 # 结束");
+        System.out.println("示例： ( A + B ) * ! C #");
+        Scanner scanner = new Scanner(System.in);
         String s;
         //#号结束输入，输入的字符间要有空格，方便处理
         while (!(s=scanner.next()).equals("#")) {
